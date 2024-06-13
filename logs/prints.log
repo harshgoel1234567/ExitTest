@@ -1,0 +1,6 @@
+00:06:36.908 [main] DEBUG tests.ProdDetailsTest - Browser closed in teardown method.
+00:06:36.935 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+00:06:36.940 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+00:06:37.006 [main] INFO  tests.SearchTest - Executing test case: SearchTest
+00:06:37.006 [main] INFO  tests.SearchTest - Search Term: One Plus 11
+00:06:44.149 [main] DEBUG tests.SearchTest - Browser closed for test case: SearchTest

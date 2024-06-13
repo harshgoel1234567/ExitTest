@@ -1,0 +1,11 @@
+00:06:19.253 [main] DEBUG tests.LandingPageTest - Asserting Home page is displayed
+00:06:19.533 [main] INFO  tests.LandingPageTest -  Landing Page test completed successfully
+00:06:19.543 [main] DEBUG tests.LandingPageTest - Closing the browser
+00:06:20.895 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+00:06:20.895 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+00:06:20.979 [main] INFO  tests.ProdDetailsTest - Executing test case: CartTest
+00:06:20.979 [main] INFO  tests.ProdDetailsTest - Search Term: One Plus 11
+00:06:27.167 [main] DEBUG tests.ProdDetailsTest - Navigated to URL: https://www.flipkart.com/
+00:06:27.772 [main] DEBUG tests.ProdDetailsTest - Entered search term: One Plus 11
+00:06:35.614 [main] INFO  tests.ProdDetailsTest - Product details are displayed.
+00:06:36.903 [main] DEBUG tests.ProdDetailsTest - Browser closed for test case: CartTest

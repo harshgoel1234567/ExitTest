@@ -1,0 +1,11 @@
+22:59:53.609 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctcell842btype
+22:59:53.623 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle stcellrefe4e0type
+22:59:53.636 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctcols627ctype
+22:59:53.644 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctcola95ftype
+22:59:53.708 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle stxstringf179type
+22:59:53.711 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle stcelltypebf95type
+22:59:53.722 [main] INFO  tests.SignUpTest - Executing test case: CartTest
+22:59:53.723 [main] INFO  tests.SignUpTest - Phone: 1.234560789E9
+23:00:00.773 [main] DEBUG tests.SignUpTest - Navigated to URL: https://www.flipkart.com/
+23:00:03.548 [main] DEBUG tests.SignUpTest - Clicked on Login button
+23:00:06.664 [main] DEBUG tests.SignUpTest - Clicked on Sign Up button
