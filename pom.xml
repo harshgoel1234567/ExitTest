@@ -97,7 +97,7 @@
 		</dependency>
 	</dependencies>
 
-<<<<<<< HEAD
+
 	<build>
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven
 			defaults (may be moved to parent pom) -->
@@ -119,7 +119,7 @@
 					<version>3.8.0</version>
 				</plugin>
 				<plugin>
-=======
+
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
@@ -138,12 +138,12 @@
           <version>3.8.0</version>
         </plugin>
        <plugin>
->>>>>>> 75f5073919a6f72ec35180d0847ad6023bec61f8
+
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>3.2.5</version>
 					<configuration>
-<<<<<<< HEAD
+
 						<parallel>methods</parallel>
                     <threadCount>5</threadCount>
 						<suiteXmlFiles>
@@ -188,7 +188,7 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-=======
+
 						<suiteXmlFiles>
 							<suiteXmlFile>testng.xml</suiteXmlFile>
 						</suiteXmlFiles>
