@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-<<<<<<< HEAD
+
   <test thread-count="5" name="Test">
-=======
+
 	<listeners>
 		<listener class-name="listeners.Listeners"></listener>
 	</listeners>
   <test  name="Test">
->>>>>>> 75f5073919a6f72ec35180d0847ad6023bec61f8
+
     <classes>
       <class name="tests.GiftCardTest"/>
       <class name="tests.CustomerServiceTest"/>
-<<<<<<< HEAD
+
       <class name="tests.NewSiteShopsyTest"/>
       <class name="tests.PincodeTest"/>
       <class name="tests.FlipkartStoriesTest"/>
@@ -30,9 +30,7 @@
       <class name="tests.BecomeASellerTest"/>
       <class name="tests.SignUpTest"/>
       <class name="tests.ProdDetailsTest"/>
-=======
-     
->>>>>>> 75f5073919a6f72ec35180d0847ad6023bec61f8
+
       <class name="tests.SaveForLaterTest"/>
       <class name="tests.SearchTest"/>
     </classes>
