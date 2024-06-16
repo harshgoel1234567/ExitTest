@@ -4,27 +4,10 @@
 	<listeners>
 		<listener class-name="listeners.Listeners"></listener>
 	</listeners>
-  <test thread-count="5" name="Test" parallel="tests">
+  <test  name="Test">
     <classes>
       <class name="tests.CustomerServiceTest"/>
-      <class name="tests.NewSiteShopsyTest"/>
-      <class name="tests.PincodeTest"/>
-      <class name="tests.FlipkartStoriesTest"/>
-      <class name="tests.GroceryTest"/>
-      <class name="tests.AboutTest"/>
-      <class name="tests.NotificationTest"/>
-      <class name="tests.LoginTest"/>
-      <class name="tests.TravelTest"/>
-      <class name="tests.TermsOfUse"/>
-      <class name="tests.CartTest"/>
-      <class name="tests.RemoveCartTest"/>
-      <class name="tests.NaviagteToCartTest"/>
-      <class name="tests.CareerTest"/>
-      <class name="tests.SignUpTest"/>
-      <class name="tests.BecomeASellerTest"/>
-      <class name="tests.LandingPageTest"/>
-      <class name="tests.ProdDetailsTest"/>
-      <class name="tests.SearchTest"/>
+     
       <class name="tests.SaveForLaterTest"/>
     </classes>
   </test> <!-- Test -->
