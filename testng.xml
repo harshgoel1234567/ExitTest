@@ -4,25 +4,22 @@
 
   <test thread-count="5" name="Test">
 
-	<listeners>
-		<listener class-name="listeners.Listeners"></listener>
-	</listeners>
-  <test  name="Test">
+    <listeners>
+      <listener class-name="listeners.Listeners"></listener>
+    </listeners>
 
     <classes>
-      
-
       <class name="tests.NewSiteShopsyTest"/>
       <class name="tests.PincodeTest"/>
-     
       <class name="tests.RemoveCartTest"/>
       <class name="tests.CartTest"/>
       <class name="tests.NaviagteToCartTest"/>
       <class name="tests.SignUpTest"/>
       <class name="tests.ProdDetailsTest"/>
-
       <class name="tests.SaveForLaterTest"/>
       <class name="tests.SearchTest"/>
     </classes>
+    
   </test> <!-- Test -->
+
 </suite> <!-- Suite -->
