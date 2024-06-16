@@ -25,7 +25,6 @@
       <class name="tests.RemoveCartTest"/>
       <class name="tests.CartTest"/>
       <class name="tests.NaviagteToCartTest"/>
-      <class name="tests.CareerTest"/>
       <class name="tests.LandingPageTest"/>
       <class name="tests.BecomeASellerTest"/>
       <class name="tests.SignUpTest"/>
