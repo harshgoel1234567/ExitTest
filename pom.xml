@@ -26,8 +26,7 @@
 			<artifactId>webdrivermanager</artifactId>
 			<version>5.8.0</version>
 		</dependency>
-		<!--
-		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -45,8 +44,7 @@
 			<artifactId>log4j-api</artifactId>
 			<version>2.23.1</version>
 		</dependency>
-		<!--
-		https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
@@ -97,19 +95,16 @@
 		</dependency>
 	</dependencies>
 
-
 	<build>
-		<pluginManagement><!-- lock down plugins versions to avoid using Maven
-			defaults (may be moved to parent pom) -->
+		<pluginManagement>
+			<!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
 			<plugins>
-				<!-- clean lifecycle, see
-				https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
+				<!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
 				<plugin>
 					<artifactId>maven-clean-plugin</artifactId>
 					<version>3.1.0</version>
 				</plugin>
-				<!-- default lifecycle, jar packaging: see
-				https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
+				<!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
 				<plugin>
 					<artifactId>maven-resources-plugin</artifactId>
 					<version>3.0.2</version>
@@ -119,42 +114,18 @@
 					<version>3.8.0</version>
 				</plugin>
 				<plugin>
-
-  <build>
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
-      <plugins>
-        <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
-        <plugin>
-          <artifactId>maven-clean-plugin</artifactId>
-          <version>3.1.0</version>
-        </plugin>
-        <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
-        <plugin>
-          <artifactId>maven-resources-plugin</artifactId>
-          <version>3.0.2</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.0</version>
-        </plugin>
-       <plugin>
-
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>3.2.5</version>
 					<configuration>
-
 						<parallel>methods</parallel>
-                    <threadCount>5</threadCount>
+						<threadCount>5</threadCount>
 						<suiteXmlFiles>
 							<suiteXmlFile>testng.xml</suiteXmlFile>
 						</suiteXmlFiles>
-						<forkCount>1</forkCount> <!-- Ensuring only one fork for
-						testing -->
-						<reuseForks>false</reuseForks> <!-- Disabling reuse of
-						forks -->
-						<argLine>-Xmx1024m</argLine> <!-- Adjust memory settings
-						if needed -->
+						<forkCount>1</forkCount> <!-- Ensuring only one fork for testing -->
+						<reuseForks>false</reuseForks> <!-- Disabling reuse of forks -->
+						<argLine>-Xmx1024m</argLine> <!-- Adjust memory settings if needed -->
 						<systemPropertyVariables>
 							<property>
 								<name>file.encoding</name>
@@ -164,8 +135,8 @@
 					</configuration>
 				</plugin>
 				<plugin>
-				<artifactId>maven-jar-plugin</artifactId>
-				<version>3.0.2</version>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>3.0.2</version>
 				</plugin>
 				<plugin>
 					<artifactId>maven-install-plugin</artifactId>
@@ -175,8 +146,7 @@
 					<artifactId>maven-deploy-plugin</artifactId>
 					<version>2.8.2</version>
 				</plugin>
-				<!-- site lifecycle, see
-				https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
+				<!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
 				<plugin>
 					<artifactId>maven-site-plugin</artifactId>
 					<version>3.7.1</version>
@@ -188,38 +158,4 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-
-						<suiteXmlFiles>
-							<suiteXmlFile>testng.xml</suiteXmlFile>
-						</suiteXmlFiles>
-					  
- 
-						
-					</configuration>
-				</plugin>
-        <plugin>
-          <artifactId>maven-jar-plugin</artifactId>
-          <version>3.0.2</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-install-plugin</artifactId>
-          <version>2.5.2</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-deploy-plugin</artifactId>
-          <version>2.8.2</version>
-        </plugin>
-        <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
-        <plugin>
-          <artifactId>maven-site-plugin</artifactId>
-          <version>3.7.1</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-project-info-reports-plugin</artifactId>
-          <version>3.0.0</version>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
->>>>>>> 75f5073919a6f72ec35180d0847ad6023bec61f8
 </project>
