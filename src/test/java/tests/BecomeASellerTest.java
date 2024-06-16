@@ -33,7 +33,7 @@ public class BecomeASellerTest extends Base {
         HomePage homepage = new HomePage(driver);
         CommonElementsPage cm = new CommonElementsPage(driver);
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
         logger.debug("Waiting for the Become A Seller link to be clickable");
         wait.until(ExpectedConditions.elementToBeClickable(homepage.becomeSellerLink()));

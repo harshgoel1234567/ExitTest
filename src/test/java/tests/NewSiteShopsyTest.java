@@ -50,7 +50,7 @@ public class NewSiteShopsyTest extends Base {
             }
         }
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         wait.until(ExpectedConditions.visibilityOf(cm.shopsyElement()));
 
         Assert.assertTrue(cm.shopsyElement().isDisplayed());

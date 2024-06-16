@@ -56,11 +56,26 @@ public class HomePage {
 	@FindBy(css = "img[title='Flipkart']")
 	private WebElement homeIcon;
 	
+	@FindBy(xpath = "//span[normalize-space()='Gift Cards']")
+	private WebElement giftcardlink;
+	
+	 @FindBy(xpath = "//span[text()='Fashion']")
+	private WebElement Fashioncat;
+	
 	
 
 	public WebElement Login() {
 		return Login;
 	}
+	public WebElement Fashioncat() {
+		return Fashioncat;
+	}
+
+	public WebElement giftcardlink() {
+		return giftcardlink;
+	}
+
+
 
 	public WebElement Searchbar() {
 		return Searchbar;

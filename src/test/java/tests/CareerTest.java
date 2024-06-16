@@ -21,7 +21,7 @@ public class CareerTest extends Base {
     private static final Logger logger = LogManager.getLogger(CareerTest.class);
 
     @Test
-    public void career() throws IOException {
+    public void career() throws IOException, InterruptedException {
         logger.info("Starting the Careers page test");
 
         driver = initializeBrowser();
@@ -33,17 +33,17 @@ public class CareerTest extends Base {
         HomePage homepage = new HomePage(driver);
         CommonElementsPage cm = new CommonElementsPage(driver);
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
         logger.debug("Waiting for the Careers link to be clickable");
         wait.until(ExpectedConditions.elementToBeClickable(homepage.careersLink()));
 
         logger.debug("Clicking on Careers link");
         homepage.careersLink().click();
-
-        logger.debug("Waiting for the Careers logo to be visible");
+        
+        logger.debug("Waiting for Careers page to load");
         wait.until(ExpectedConditions.visibilityOf(cm.careerLogo()));
-
+       
         logger.debug("Asserting if Careers page is displayed");
         Assert.assertTrue(cm.careerLogo().isDisplayed());
         logger.info("Careers Page test completed successfully");

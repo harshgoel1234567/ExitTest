@@ -1,6 +1,7 @@
 package tests;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.List;
 import java.util.Map;
 
@@ -11,11 +12,17 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
+import pageobjects.CartPage;
 import pageobjects.HomePage;
 import pageobjects.ProductPage;
 import resources.Base;
 import utilities.ExcelUtils;
 import utilities.FilePaths;
+
+
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
 
 public class SearchTest extends Base {
 	
@@ -52,7 +59,8 @@ public class SearchTest extends Base {
                     logger.debug("Entered search term: " + searchTerm);
                     homepage.Search().click();
 
-                    Assert.assertTrue(product.searchRes().isDisplayed());
+                    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+                    wait.until(ExpectedConditions.visibilityOf(product.searchRes()));
                     logger.info("Search results displayed successfully for: " + searchTerm);
                 } finally {
                     if (driver != null) {

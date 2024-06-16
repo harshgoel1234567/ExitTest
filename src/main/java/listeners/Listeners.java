@@ -1,6 +1,5 @@
 package listeners;
 
-
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
@@ -16,68 +15,51 @@ import resources.Base;
 import utilities.ExtentReporter;
 
 public class Listeners extends Base implements ITestListener {
-	ExtentReports extentReport = ExtentReporter.getExtentReport()
-;
-	WebDriver driver = null;
-	ExtentTest extentTest ;
-	
+    ExtentReports extentReport = ExtentReporter.getExtentReport();
+    WebDriver driver = null;
+    ExtentTest extentTest;
 
-	@Override
-	public void onTestStart(ITestResult result) {
-		String testName=result.getName();
-		 extentTest = extentReport.createTest(testName+ " test execution begins ");
-	}
+    @Override
+    public void onTestStart(ITestResult result) {
+        String testName = result.getName();
+        extentTest = extentReport.createTest(testName + " test execution begins ");
+    }
 
-	@Override
-	public void onTestSuccess(ITestResult result) {
-		String testName=result.getName();
+    @Override
+    public void onTestSuccess(ITestResult result) {
+        String testName = result.getName();
+        extentTest.log(Status.PASS, testName + " is passed");
+    }
 
-		extentTest.log(Status.PASS, testName+ "is passed" );
-	}
+    @Override
+    public void onTestFailure(ITestResult result) {
+        String testName = result.getName();
+        extentTest.fail(result.getThrowable());
 
-	@Override
-	public void onTestFailure(ITestResult result) {
-		
-		String testName=result.getName();
-		extentTest.fail(result.getThrowable());
+        String testMethodName = result.getName(); // getting test name
 
-		String testMethodName = result.getName();//getting test name 
-		
-		
-			try {
-				driver = (WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
-			} catch (IllegalArgumentException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (IllegalAccessException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (NoSuchFieldException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (SecurityException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			//driver of the failing test
-		
-		
-		try {
-			takeScreenshot(testMethodName,driver);
-		} catch (IOException e) {
-			
-			e.printStackTrace();
-		}
-	}
+        try {
+            driver = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
+        } catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
+            extentTest.fail("Failed to retrieve WebDriver instance");
+            e.printStackTrace();
+        }
 
-	
-	@Override
-	public void onFinish(ITestContext context) {
-		
-		extentReport.flush(); //if not writtten nothing will happen
-		
-	}
-	
-	
+        if (driver != null) {
+            try {
+                String screenshotPath = takeScreenshot(testMethodName, driver);
+                extentTest.addScreenCaptureFromPath(screenshotPath, testMethodName);
+            } catch (IOException e) {
+                extentTest.fail("Failed to take screenshot");
+                e.printStackTrace();
+            }
+        } else {
+            extentTest.fail("WebDriver instance is null, unable to take screenshot");
+        }
+    }
 
+    @Override
+    public void onFinish(ITestContext context) {
+        extentReport.flush(); // if not written nothing will happen
+    }
 }

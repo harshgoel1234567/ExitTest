@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-13T23:57:56 IST" name="Default suite" finished-at="2024-06-13T23:58:02 IST" duration-ms="6504">
+  <suite started-at="2024-06-16T23:38:22 IST" name="Default suite" finished-at="2024-06-16T23:38:53 IST" duration-ms="30556">
     <groups>
     </groups>
-    <test started-at="2024-06-13T23:57:56 IST" name="Default test" finished-at="2024-06-13T23:58:02 IST" duration-ms="6504">
-      <class name="tests.TravelTest">
-        <test-method signature="travel()[pri:0, instance:tests.TravelTest@5a4bef8]" started-at="2024-06-13T23:57:56 IST" name="travel" finished-at="2024-06-13T23:58:02 IST" duration-ms="6061" status="PASS">
+    <test started-at="2024-06-16T23:38:22 IST" name="Default test" finished-at="2024-06-16T23:38:53 IST" duration-ms="30556">
+      <class name="tests.CareerTest">
+        <test-method signature="career()[pri:0, instance:tests.CareerTest@5a4bef8]" started-at="2024-06-16T23:38:23 IST" name="career" finished-at="2024-06-16T23:38:49 IST" duration-ms="26729" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- travel -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.TravelTest@5a4bef8]" started-at="2024-06-13T23:58:02 IST" name="teardown" finished-at="2024-06-13T23:58:02 IST" duration-ms="385" status="PASS">
+        </test-method> <!-- career -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.CareerTest@5a4bef8]" started-at="2024-06-16T23:38:49 IST" name="teardown" finished-at="2024-06-16T23:38:53 IST" duration-ms="3499" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- tests.TravelTest -->
+      </class> <!-- tests.CareerTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

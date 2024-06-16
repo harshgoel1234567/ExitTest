@@ -20,7 +20,7 @@ public class CommonElementsPage {
 	WebElement DesktopNotification;
 	@FindBy(xpath = "//a[normalize-space()='About']")
 	private WebElement aboutLink;
-	@FindBy(xpath = "//span[@class='logo_career_text']")
+	@FindBy(xpath = "//a[@id='candidate-login-before']")
 	private WebElement careerLogo;
 	@FindBy(xpath = "//h1[normalize-space()='Flipkart Help Center | 24x7 Customer Care Support']")
 	private WebElement contactHeader;
@@ -29,7 +29,7 @@ public class CommonElementsPage {
 	WebElement groceryPageImage;
 	@FindBy(xpath = "//button[normalize-space()='Start Selling']")
 	private WebElement startSellingButton;
-	@FindBy(xpath = "//li[@id='menu-item-66351']")
+	@FindBy(xpath = "//div[@class='site-primary-header-wrap ast-builder-grid-row-container site-header-focus-item ast-container']//a[@class='ast-custom-button-link']")
 	private WebElement menuItem;
 	@FindBy(xpath = "//strong[normalize-space()='Flipkart Terms of Use']")
 	private WebElement termsHeader;
@@ -37,9 +37,25 @@ public class CommonElementsPage {
 	private WebElement shopsyElement;
 	@FindBy(xpath = "//div[@class='NmD+EK']")
 	private WebElement travelpage;
+	
+	@FindBy(xpath = "//h1[normalize-space()='Gift Card Store']")
+	private WebElement giftcard;
+	
+	@FindBy(xpath = "//h1[normalize-space()='Fashion']")
+	private WebElement fashion;
+	
+	
 
 	public WebElement DesktopNotification() {
 		return DesktopNotification;
+	}
+	
+	public WebElement fashion() {
+		return fashion;
+	}
+	
+	public WebElement giftcard() {
+		return giftcard;
 	}
 
 	public WebElement aboutLink() {

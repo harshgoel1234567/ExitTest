@@ -1,0 +1,13 @@
+23:35:19.524 [main] DEBUG tests.CareerTest - Browser initialized
+23:35:20.147 [main] INFO  tests.CareerTest - Navigated to URL: https://www.flipkart.com/
+23:35:20.211 [main] DEBUG tests.CareerTest - Waiting for the Careers link to be clickable
+23:35:23.603 [main] DEBUG tests.CareerTest - Clicking on Careers link
+23:35:23.844 [main] DEBUG tests.CareerTest - Waiting for Careers page to load
+23:36:05.076 [main] DEBUG tests.CareerTest - Closing the browser
+23:38:23.118 [main] INFO  tests.CareerTest - Starting the Careers page test
+23:38:35.323 [main] DEBUG tests.CareerTest - Browser initialized
+23:38:41.639 [main] INFO  tests.CareerTest - Navigated to URL: https://www.flipkart.com/
+23:38:42.167 [main] DEBUG tests.CareerTest - Waiting for the Careers link to be clickable
+23:38:42.362 [main] DEBUG tests.CareerTest - Clicking on Careers link
+23:38:43.534 [main] DEBUG tests.CareerTest - Waiting for Careers page to load
+23:38:49.676 [main] DEBUG tests.CareerTest - Asserting if Careers page is displayed

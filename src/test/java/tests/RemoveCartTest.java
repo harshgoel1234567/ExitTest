@@ -25,15 +25,14 @@ import utilities.ExcelUtils;
 import utilities.FilePaths;
 
 public class RemoveCartTest extends Base {
-    
-   public WebDriver driver;
-    private static final Logger logger = LogManager.getLogger(RemoveCartTest.class);
 
-    
-    @Test
+	public WebDriver driver;
+	private static final Logger logger = LogManager.getLogger(RemoveCartTest.class);
+
+	@Test
     public void RemoveCart() throws IOException, InterruptedException {
     	 String excelFilePath = FilePaths.EXCEL_FILE_PATH;
-         String sheetName = "CommonCartTests";
+         String sheetName = "CommonCartTests"; 
          
          List<Map<String, String>> testCases = ExcelUtils.getTestCases(excelFilePath, sheetName);
          
@@ -123,25 +122,22 @@ public class RemoveCartTest extends Base {
         // Switch back to the original window if needed
         driver.switchTo().window(originalWindow);
              }
-                 catch(Exception e) {
-                 logger.error("Error occurred during the test case execution: " + testCaseName, e);
-             } finally {
-                 if (driver != null) {
-                     driver.quit();
-                     logger.debug("Browser closed for test case: " + testCaseName);
+                 catch (Exception e) {
+                     logger.error("Error occurred during the test case execution: " + testCaseName, e);
+                 } finally {
+                     if (driver != null) {
+                         driver.quit();
+                         logger.debug("Browser closed for test case: " + testCaseName);
+                     }
                  }
              }
          }
      }
- }
 
-         
-    
-    
-    @AfterMethod
-    public void teardown() {
-        if (driver != null) {
-            driver.quit();  
-        }
-    }
+	@AfterMethod
+	public void teardown() {
+		if (driver != null) {
+			driver.quit();
+		}
+	}
 }
