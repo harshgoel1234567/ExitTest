@@ -9,15 +9,28 @@
     </listeners>
 
     <classes>
+      <class name="tests.GiftCardTest"/>
+      <class name="tests.CustomerServiceTest"/>
       <class name="tests.NewSiteShopsyTest"/>
       <class name="tests.PincodeTest"/>
+      <class name="tests.FlipkartStoriesTest"/>
+      <class name="tests.AboutTest"/>
+      <class name="tests.GroceryTest"/>
+      <class name="tests.NotificationTest"/>
+      <class name="tests.TravelTest"/>
+      <class name="tests.TermsOfUse"/>
+      <class name="tests.FashionTest"/>
       <class name="tests.RemoveCartTest"/>
       <class name="tests.CartTest"/>
       <class name="tests.NaviagteToCartTest"/>
+     
+      <class name="tests.LandingPageTest"/>
       <class name="tests.SignUpTest"/>
+      <class name="tests.BecomeASellerTest"/>
       <class name="tests.ProdDetailsTest"/>
       <class name="tests.SaveForLaterTest"/>
       <class name="tests.SearchTest"/>
+      
     </classes>
     
   </test> <!-- Test -->
